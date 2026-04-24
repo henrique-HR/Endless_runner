@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+@media screen and (orientation: landscape) and (max-width: 896px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: cursive;
+    }
+
+    .game_board {
+        height: 90vh;
+        width: 90vw;
+    }
+
+    #botao {
+        position: absolute;
+        bottom: 20px;
+        right: 10vw;
+        background-color: rgba(26, 139, 192, 0.635);
+        border-radius: 50%;
+        font-size: 2em;
+        width: 100px;
+        height: 100px;
+        display: block;
+    }
+
+    .personagem {
+        left: 75px;
+        bottom: 0;
+    }
+
+    .pedra {
+        position: absolute;
+        animation: mover 2s infinite linear;
+    }
+}

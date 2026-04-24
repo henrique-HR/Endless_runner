@@ -78,7 +78,7 @@ function fim() {
     clearInterval(loop)
     clearInterval(scoreLoop)
 
-    audioEfeito.setAttribute('src', './audio/foguete.mp3')
+    audioEfeito.setAttribute('src', './audio/que-pancada-na-molera.mp3')
     audioEfeito.play()
     audiofundo.pause()
 

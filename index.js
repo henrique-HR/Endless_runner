@@ -108,5 +108,5 @@ const pulo = () => {
 // --- Controles ---
 botao.addEventListener('click', pulo)
 document.addEventListener('keydown', (e) => {
-    if (e.code === 'Space') pulo()
+    if (e.code === 'Space' || e.code === 'ArrowUp') pulo()
 })

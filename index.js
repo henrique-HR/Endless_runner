@@ -78,7 +78,7 @@ function fim() {
     clearInterval(loop)
     clearInterval(scoreLoop)
 
-    audioEfeito.setAttribute('src', './audio/audio_wndzp.mp3')
+    audioEfeito.setAttribute('src', './audio/foguete.mp3')
     audioEfeito.play()
     audiofundo.pause()
 
@@ -98,7 +98,7 @@ const pulo = () => {
     if (!gameAtivo) return
     if (mario.classList.contains('jump')) return
     mario.classList.add('jump')
-    audioEfeito.setAttribute('src', './audio/eu-gostumm.mp3')
+    audioEfeito.setAttribute('src', './audio/ladrao.mp3')
     audioEfeito.play()
     setTimeout(() => {
         mario.classList.remove('jump')

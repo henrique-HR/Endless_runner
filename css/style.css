@@ -7,10 +7,10 @@
 .game_board {
     background-image: linear-gradient(to bottom, rgb(157, 208, 236), white);
     position: relative;
-    border-bottom: 20px dashed rgb(3, 71, 19);
+    border-bottom: 15px dashed rgb(3, 71, 19);
     margin: 0 auto;
     width: 100vw;
-    height: 600px;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -34,8 +34,9 @@ span {
 .sefudeu {
     background-color: black;
     background-image: url('../imagens/sefudeu.webp');
-    transition: 1s;
+    transition: 2s;
     background-size: cover;
+    
 }
 
 .personagem {
@@ -54,6 +55,7 @@ span {
 
 .morte {
     animation: morte 0.5s linear forwards;
+    
 }
 
 .pedra {
@@ -139,6 +141,7 @@ span {
 @keyframes morte {
     to {
         transform: translate(-400px, -50px) rotate(-180deg) scale(0.5);
+
     }
 }
 #tela-inicio {

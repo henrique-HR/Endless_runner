@@ -63,28 +63,40 @@ function iniciar() {
         const pedraRect = pedra.getBoundingClientRect()
 
         const colidiu = (
-            marioRect.right  > pedraRect.left  + 10 &&
+            marioRect.right  > pedraRect.left  +2 &&
             marioRect.left   < pedraRect.right - 10 &&
-            marioRect.bottom > pedraRect.top   + 10
+            marioRect.bottom > pedraRect.top   + 10 
+            
         )
+        
 
         if (colidiu) fim()
-    }, 10)
-}
+    }, 10) 
 
+}
+   
 // --- Game Over ---
 function fim() {
     gameAtivo = false
     clearInterval(loop)
+   
+    
     clearInterval(scoreLoop)
 
-    audioEfeito.setAttribute('src', './audio/foguete.mp3')
+    audioEfeito.setAttribute('src', './audio/que-pancada-na-molera.mp3')
     audioEfeito.play()
     audiofundo.pause()
-
+    const marioRect = mario.getBoundingClientRect()
+    console.log(marioRect.right)
     pedra.style.animation = 'none'
-    pedra.style.left = pedra.getBoundingClientRect().left + 'px'
+    pedra.style.animation = 'none'
+    pedra.style.animation = 'none'
+    pedra.style.animation = 'none'
+    // pedra.style.left = pedra.getBoundingClientRect().left + '160px'
     mario.classList.add('morte')
+    pedra.style.left = marioRect.right +"px"
+    
+    
     game.classList.add('sefudeu')
 
     // Volta para tela inicial apos 6 segundos
